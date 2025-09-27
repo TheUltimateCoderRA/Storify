@@ -7,13 +7,17 @@ from datetime import datetime
 import json
 from PIL import Image
 
+# ===== ADD VERIFICATION CODE RIGHT HERE - AT THE VERY TOP =====
+st.write("Impact-Site-Verification: 9fdeccf9-536f-44bb-9544-4ed616bc885e")
+st.markdown("---")
+# ===== END VERIFICATION CODE =====
+
 st.set_page_config(
     page_title="Storify! - AI Story Creator",
-    page_icon="📖",  # or use "✨", "🪄"
+    page_icon="📖",
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
 
 DEFAULT_CSS = """
 <style>
