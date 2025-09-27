@@ -6,18 +6,14 @@ import time
 from datetime import datetime
 import json
 from PIL import Image
-# ===== GRAMMARLY VERIFICATION - ADD AT THE VERY TOP =====
-st.markdown("Impact-Site-Verification: 9fdeccf9-536f-44bb-9544-4ed616bc885e")
-st.markdown("<p style='color: white; font-size: 1px;'>Impact-Site-Verification: 9fdeccf9-536f-44bb-9544-4ed616bc885e</p>", unsafe_allow_html=True)
-# ===== END VERIFICATION =====
-# ===== END VERIFICATION CODE =====
 
 st.set_page_config(
     page_title="Storify! - AI Story Creator",
-    page_icon="📖",
+    page_icon="📖",  # or use "✨", "🪄"
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
 
 DEFAULT_CSS = """
 <style>
@@ -274,6 +270,7 @@ DEFAULT_CSS = """
 """
 # Apply default beautiful styling
 st.markdown(DEFAULT_CSS, unsafe_allow_html=True)
+
 
 # ===== GLOBAL FUNCTIONS =====
 def build_prompt_for_chapter(story_info, chapter_idx, words_per_chapter):
@@ -1355,7 +1352,6 @@ elif page == "Explore":
         st.markdown("---")
 # Configure the page first
 if page == "Home Page":
-    st.write("Impact-Site-Verification: 9fdeacf9-536f-44bb-9544-4ed616bc885e")
     with st.container():
         col1, col2 = st.columns(2)
         
