@@ -6,10 +6,10 @@ import time
 from datetime import datetime
 import json
 from PIL import Image
-
-# ===== ADD VERIFICATION CODE RIGHT HERE - AT THE VERY TOP =====
-st.write("Impact-Site-Verification: 9fdeccf9-536f-44bb-9544-4ed616bc885e")
-st.markdown("---")
+# ===== GRAMMARLY VERIFICATION - ADD AT THE VERY TOP =====
+st.markdown("Impact-Site-Verification: 9fdeccf9-536f-44bb-9544-4ed616bc885e")
+st.markdown("<p style='color: white; font-size: 1px;'>Impact-Site-Verification: 9fdeccf9-536f-44bb-9544-4ed616bc885e</p>", unsafe_allow_html=True)
+# ===== END VERIFICATION =====
 # ===== END VERIFICATION CODE =====
 
 st.set_page_config(
