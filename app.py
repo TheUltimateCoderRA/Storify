@@ -271,7 +271,6 @@ DEFAULT_CSS = """
 # Apply default beautiful styling
 st.markdown(DEFAULT_CSS, unsafe_allow_html=True)
 
-st.write("Impact-Site-Verification: 9fdeacf9-536f-44bb-9544-4ed616bc885e")
 # ===== GLOBAL FUNCTIONS =====
 def build_prompt_for_chapter(story_info, chapter_idx, words_per_chapter):
     chapter = story_info["chapters"][chapter_idx]
@@ -1352,6 +1351,7 @@ elif page == "Explore":
         st.markdown("---")
 # Configure the page first
 if page == "Home Page":
+    st.write("Impact-Site-Verification: 9fdeacf9-536f-44bb-9544-4ed616bc885e")
     with st.container():
         col1, col2 = st.columns(2)
         
