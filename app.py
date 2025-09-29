@@ -6,6 +6,11 @@ import time
 from datetime import datetime
 import json
 from PIL import Image
+from gtts import gTTS
+import tempfile
+import textwrap
+import os
+import io
 
 st.set_page_config(
     page_title="Storify! - AI Story Creator",
@@ -874,7 +879,38 @@ elif page == "Dashboard":
                                     outlines = chapter.get("outlines", [])
                                     for o_idx, outline in enumerate(outlines):
                                         st.write(f"- {outline}")
+                        if st.button("Convert to Audio Book"):
+                            if story.get("full_story"):
+                                title = story.get("title", "Untitled")
+                                full_story = story.get("full_story")
+                                text = f"{title}. {full_story}"
 
+                                # Split text into chunks (~200 chars)
+                                chunks = textwrap.wrap(text, 200)
+
+                                # Combine all chunks into one MP3 in memory
+                                combined_audio = io.BytesIO()
+                                for chunk in chunks:
+                                    tts = gTTS(text=chunk, lang='en')
+                                    tmp_audio = io.BytesIO()
+                                    tts.write_to_fp(tmp_audio)
+                                    tmp_audio.seek(0)
+                                    combined_audio.write(tmp_audio.read())
+
+                                combined_audio.seek(0)
+
+                                st.success("✅ Audio book generated successfully!")
+
+                                # Play the full audiobook
+                                st.audio(combined_audio, format="audio/mp3")
+
+                                # Download button for the full audiobook
+                                st.download_button(
+                                    label="💾 Download Full Audiobook",
+                                    data=combined_audio,
+                                    file_name=f"{title}-audiobook.mp3",
+                                    mime="audio/mp3"
+                                )
                         col1, col2 = st.columns(2)
                         with col1:
                             if st.button(f"Edit '{story['title']}'", key=f"edit_{story['id']}"):
