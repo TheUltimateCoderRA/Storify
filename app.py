@@ -1420,6 +1420,12 @@ if page == "Home Page":
 
     # Additional sections (properly indented under the same container)
     st.markdown("---")
+    col1a, col1b = st.columns(2)
+    with col1a:
+        st.header("Watch this video for a tutoial")
+        st.write("Detailed Overview")
+        st.video("https://www.youtube.com/watch?v=iLNR4q-OIlg")
+    st.markdown("---")
     st.markdown("**🎉 5,000+ stories created this week!**")
     st.markdown("**⭐ Loved by writers and dreamers**")
 
