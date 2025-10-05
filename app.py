@@ -323,7 +323,7 @@ def generate_full_story(story_info, words_per_chapter=500):
     try:
         APIkey = st.secrets["gemini"]["api_key"]
         genai.configure(api_key=APIkey)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash-lite')
     except Exception as e:
         st.error(f"Gemini configuration error: {e}")
         return None
@@ -510,7 +510,7 @@ Example: 850
     try:
         APIkey = st.secrets["gemini"]["api_key"]
         genai.configure(api_key=APIkey)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash-lite')
         response = model.generate_content(rating_prompt)
         rating_text = response.text.strip()
         rating = float(rating_text)
