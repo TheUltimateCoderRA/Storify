@@ -762,11 +762,7 @@ elif page == "Create Story":
         
         with STORYTABS[4]:
             st.header("Save & Manage Your Story")
-            
-            if st.session_state.get("generated_story"):
-                st.success("Story generated successfully! You can now save it.")
-                
-                if st.button("💾 Save Story"):
+            if st.button("💾 Save Story"):
                     if "user_id" not in st.session_state:
                         st.error("No user ID found. Please log in again.")
                     elif not title.strip():
@@ -814,8 +810,8 @@ elif page == "Create Story":
                             st.rerun()
                         else:
                             st.error("Failed to save story. Please try again.")
-            else:
-                st.info("Generate a story first before saving")
+    
+
 
 # ... (rest of your code for Dashboard, Leaderboard, Explore remains the same)
 elif page == "Dashboard":
