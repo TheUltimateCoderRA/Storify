@@ -608,10 +608,13 @@ if page == "Login/Signup":
             password = st.text_input("Password", type="password", key='password')
             submitted = st.form_submit_button("Sign Up", key='signup')
             if submitted:
-                if signup(firstname, lastname, username, email, password):
-                    st.success("Signup Successful")
+                if firstname is not None and lastname is not None and username is not None and password is not None and email is not None:
+                    if signup(firstname, lastname, username, email, password):
+                        st.success("Signup Successful")
+                    else:
+                        st.error("Signup Failed")
                 else:
-                    st.error("Signup Failed")
+                    st.error("Please enter all information")
     
     with FLS_TABS[0]:
         with st.form("Login Form"):
