@@ -1421,7 +1421,7 @@ if page == "Home Page":
     st.markdown("---")
     col1a, col1b = st.columns(2)
     with col1a:
-        st.header("Watch this video for a tutoial")
+        st.header("Watch this video for a tutorial")
         st.write("Detailed Overview")
         st.video("https://www.youtube.com/watch?v=iLNR4q-OIlg")
     st.markdown("---")
