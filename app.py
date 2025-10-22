@@ -11,10 +11,14 @@ import tempfile
 import textwrap
 import os
 import io
+import threading
+import time
+
+icon_url="https://i.ibb.co/qLH2c1zC/image.png"
 
 st.set_page_config(
     page_title="Storify! - AI Story Creator",
-    page_icon="📖",  # or use "✨", "🪄"
+    page_icon=icon_url,  # or use "✨", "🪄"
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -277,7 +281,54 @@ DEFAULT_CSS = """
 st.markdown(DEFAULT_CSS, unsafe_allow_html=True)
 
 
-# ===== GLOBAL FUNCTIONS =====
+# ===== AUTO-SAVE THREAD =====
+def auto_save_worker():
+    """Background thread that auto-saves every 30 seconds"""
+    while True:
+        time.sleep(30)  # Wait 30 seconds
+        
+        # Check if we should save
+        if (st.session_state.get("SIGNED_IN") and 
+            st.session_state.get("title") and 
+            st.session_state.get("title", "").strip() and
+            (page == "Create Story" or st.session_state.get("current_story_id") is not None)):
+            
+            # Get character data
+            characters = []
+            for i in range(1, st.session_state.get("num_characters", 5) + 1):
+                characters.append({
+                    "name": st.session_state.get(f"char_name_{i}", ""),
+                    "role": st.session_state.get(f"char_role_{i}", ""),
+                    "age": st.session_state.get(f"char_age_{i}", ""),
+                    "traits": st.session_state.get(f"char_personality_{i}", []),
+                    "goal": st.session_state.get(f"char_goal_{i}", ""),
+                    "problem": st.session_state.get(f"char_problem_{i}", ""),
+                    "backstory": st.session_state.get(f"char_backstory_{i}", "")
+                })
+            
+            # Save to database
+            try:
+                create_story(
+                    st.session_state["user_id"],
+                    st.session_state.get("title", ""),
+                    st.session_state.get("book_type", "Fiction"),
+                    st.session_state.get("summarised", ""),
+                    st.session_state.get("chapters", []),
+                    characters,
+                    st.session_state.get("generated_story", ""),
+                    st.session_state.get("story_rating")
+                )
+                print(f"💾 Auto-saved: {st.session_state.get('title')}")  # Debug log
+            except Exception as e:
+                print(f"Auto-save error: {e}")
+
+# Start the auto-save thread (only once)
+if "auto_save_thread_started" not in st.session_state:
+    thread = threading.Thread(target=auto_save_worker, daemon=True)
+    thread.start()
+    st.session_state.auto_save_thread_started = True
+    print("✅ Auto-save thread started")
+
 def build_prompt_for_chapter(story_info, chapter_idx, words_per_chapter):
     chapter = story_info["chapters"][chapter_idx]
     characters_text = ""
@@ -494,9 +545,8 @@ As an expert story critic, please rate the following story on a scale of 1-1000.
 Consider these criteria:
 1. Creativity and originality (25%)
 2. Character development (25%)
-3. Plot structure and pacing (20%)
-4. Writing style and language (20%)
-5. Emotional impact (10%)
+3. Plot structure and pacing (25%)
+4. Emotional impact (15%)
 
 Story Title: {title}
 Type: {book_type}
@@ -506,6 +556,9 @@ Story Content:
 
 Please provide ONLY a single number between 1-1000 as your rating. No other text.
 Example: 850
+
+You must be extremely harsh, and do not consider vocabulary, focus on the plot, chracter development and emotional impact.
+Remember to be very harsh. Nothing even above 920.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 """
     try:
         APIkey = st.secrets["gemini"]["api_key"]
