@@ -443,7 +443,7 @@ traits = [
 ]
 
 LS_TABS = ["Login", "Sign up"]
-MENU = ["Home Page", "Login/Signup", "Dashboard", "Create Story", "Leaderboard", "Explore", "About the creator"]
+MENU = ["Home Page", "Login/Signup", "Dashboard", "Create Story", "Leaderboard", "Explore", "About the creator", "Privacy Policy"]
 
 SUPABASE_URL = "https://omkvbyqtvomjivzokezm.supabase.co"
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9ta3ZieXF0dm9taml2em9rZXptIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTczMzkwMzEsImV4cCI6MjA3MjkxNTAzMX0.nc5fqqM1ueM0nn9YGpYAEB68jj7FC_J-q3xupeIQyE8"
@@ -1577,3 +1577,13 @@ This application is designed to **assist writers in overcoming creative blocks a
             st.image(image)
         except:
             st.info("Profile image not found")
+
+
+#footer
+
+if page == "Privacy Policy":
+    with open('privacy.txt', 'r') as f:
+        footer_content = f.read() 
+
+    st.markdown("---")
+    st.info(footer_content)
