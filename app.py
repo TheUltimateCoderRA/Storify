@@ -17,7 +17,7 @@ import time
 icon_url = "https://i.ibb.co/qLH2c1zC/image.png"
 
 st.set_page_config(
-    page_title="Storify! - AI Story Creator",
+    page_title="Storify! - Just Write It",
     page_icon=icon_url,
     layout="wide",
     initial_sidebar_state="expanded"
@@ -522,7 +522,10 @@ Please provide ONLY a single number between 1-1000 as your rating. No other text
 Example: 850
 
 You must be extremely harsh, and do not consider vocabulary, focus on the plot, chracter development and emotional impact.
-Remember to be very harsh. Nothing even above 920.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+Remember to be very harsh. Nothing even above 920.
+Even the best stories you have ever read will be only like 850ish
+You do not have to only use uniform number you can use numbers like 738 not just 740
+Your only job is to be harsh
 """
     try:
         APIkey = st.secrets["gemini"]["api_key"]
