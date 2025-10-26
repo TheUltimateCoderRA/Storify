@@ -35,7 +35,7 @@ DEFAULT_CSS = """
         margin-bottom: 2rem;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
-    
+
     .metric-card {
         background: white;
         padding: 1.5rem;
@@ -44,7 +44,7 @@ DEFAULT_CSS = """
         border-left: 4px solid #667eea;
         margin: 0.5rem 0;
     }
-    
+
     .content-card {
         background: white;
         padding: 2rem;
@@ -52,11 +52,11 @@ DEFAULT_CSS = """
         box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         margin: 1rem 0;
     }
-    
+
     .sidebar-content {
         background: #f8f9fa !important;
     }
-    
+
     /* === NAVIGATION & LAYOUT COMPONENTS === */
     /* Sidebar Radio Navigation */
     .stSidebar [data-testid="stVerticalBlock"] [data-testid="stRadio"] {
@@ -65,7 +65,7 @@ DEFAULT_CSS = """
         border-radius: 10px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    
+
     /* Tabs Styling */
     .stTabs [data-baseweb="tab-list"] {
         gap: 8px;
@@ -73,7 +73,7 @@ DEFAULT_CSS = """
         padding: 8px;
         border-radius: 12px;
     }
-    
+
     .stTabs [data-baseweb="tab"] {
         background: white;
         border-radius: 8px;
@@ -81,13 +81,13 @@ DEFAULT_CSS = """
         border: none;
         transition: all 0.3s ease;
     }
-    
+
     .stTabs [aria-selected="true"] {
         background: linear-gradient(45deg, #667eea, #764ba2) !important;
         color: white !important;
         box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
     }
-    
+
     /* Columns Enhancement */
     [data-testid="column"] {
         background: white;
@@ -97,7 +97,7 @@ DEFAULT_CSS = """
         margin: 0.5rem;
         border-left: 3px solid #667eea;
     }
-    
+
     /* Expander Styling */
     .streamlit-expanderHeader {
         background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -106,14 +106,14 @@ DEFAULT_CSS = """
         font-weight: 600;
         border-left: 4px solid #667eea;
     }
-    
+
     .streamlit-expanderContent {
         background: white;
         padding: 1.5rem;
         border-radius: 0 0 8px 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    
+
     /* === INPUT COMPONENTS === */
     /* Text Input & Text Area */
     .stTextInput>div>div>input, .stTextArea>div>div>textarea {
@@ -123,12 +123,12 @@ DEFAULT_CSS = """
         padding: 0.75rem;
         transition: all 0.3s ease;
     }
-    
+
     .stTextInput>div>div>input:focus, .stTextArea>div>div>textarea:focus {
         border-color: #667eea;
         box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
     }
-    
+
     /* Radio Buttons & Checkboxes */
     .stRadio [role="radiogroup"], .stCheckbox [data-testid="stCheckbox"] {
         background: white;
@@ -136,16 +136,16 @@ DEFAULT_CSS = """
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    
+
     /* Slider Styling */
     .stSlider [data-testid="stThumb"] {
         background: linear-gradient(45deg, #667eea, #764ba2);
     }
-    
+
     .stSlider [data-testid="stTrack"] {
         background: #e9ecef;
     }
-    
+
     /* Number Input */
     .stNumberInput>div>div>input {
         background: white;
@@ -153,7 +153,7 @@ DEFAULT_CSS = """
         border-radius: 8px;
         padding: 0.75rem;
     }
-    
+
     /* Selectbox & Multiselect */
     .stSelectbox>div>div, .stMultiSelect>div>div {
         background: white;
@@ -161,11 +161,11 @@ DEFAULT_CSS = """
         border-radius: 8px;
         transition: all 0.3s ease;
     }
-    
+
     .stSelectbox>div>div:hover, .stMultiSelect>div>div:hover {
         border-color: #667eea;
     }
-    
+
     /* Buttons */
     .stButton>button {
         background: linear-gradient(45deg, #667eea, #764ba2);
@@ -177,63 +177,63 @@ DEFAULT_CSS = """
         transition: all 0.3s ease;
         width: 100%;
     }
-    
+
     .stButton>button:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
     }
-    
+
     /* Form Submit Button */
     .stFormSubmitButton>button {
         background: linear-gradient(45deg, #28a745, #20c997) !important;
     }
-    
+
     /* === DISPLAY COMPONENTS === */
     /* Headers and Subheaders */
     .stHeader, .stSubheader, .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
         color: #2d3748;
         margin-bottom: 1rem;
     }
-    
+
     /* Caption Styling */
     .stCaption {
         color: #718096;
         font-style: italic;
     }
-    
+
     /* Alert Messages */
     .stAlert {
         border-radius: 10px;
         padding: 1rem;
         margin: 1rem 0;
     }
-    
+
     .stInfo {
         background: linear-gradient(135deg, #bee3f8, #ebf8ff);
         border-left: 4px solid #3182ce;
     }
-    
+
     .stWarning {
         background: linear-gradient(135deg, #fefcbf, #fffaf0);
         border-left: 4px solid #d69e2e;
     }
-    
+
     .stError {
         background: linear-gradient(135deg, #fed7d7, #fff5f5);
         border-left: 4px solid #e53e3e;
     }
-    
+
     .stSuccess {
         background: linear-gradient(135deg, #c6f6d5, #f0fff4);
         border-left: 4px solid #38a169;
     }
-    
+
     /* Progress Bar */
     .stProgress > div > div > div {
         background: linear-gradient(45deg, #667eea, #764ba2);
         border-radius: 4px;
     }
-    
+
     /* Metric Display */
     [data-testid="metric-container"] {
         background: white;
@@ -242,14 +242,14 @@ DEFAULT_CSS = """
         box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         border-left: 4px solid #667eea;
     }
-    
+
     /* Spinner */
     .stSpinner > div {
         border: 3px solid #f3f3f3;
         border-top: 3px solid #667eea;
         border-radius: 50%;
     }
-    
+
     /* === FORM COMPONENTS === */
     .stForm {
         background: white;
@@ -258,7 +258,7 @@ DEFAULT_CSS = """
         box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         margin: 1rem 0;
     }
-    
+
     /* === CUSTOM CONTAINER STYLING === */
     .stContainer {
         background: white;
@@ -267,7 +267,7 @@ DEFAULT_CSS = """
         box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         margin: 1rem 0;
     }
-    
+
     /* === BALLOONS ANIMATION ENHANCEMENT === */
     .balloons-container {
         position: relative;
@@ -277,6 +277,7 @@ DEFAULT_CSS = """
 """
 # Apply default beautiful styling
 st.markdown(DEFAULT_CSS, unsafe_allow_html=True)
+
 
 def build_prompt_for_chapter(story_info, chapter_idx, words_per_chapter):
     chapter = story_info["chapters"][chapter_idx]
@@ -319,6 +320,7 @@ Please generate only the text for this chapter.
 """
     return prompt
 
+
 def generate_full_story(story_info, words_per_chapter=500):
     try:
         APIkey = st.secrets["gemini"]["api_key"]
@@ -334,7 +336,7 @@ def generate_full_story(story_info, words_per_chapter=500):
         if not chapter.get("outlines"):
             st.warning(f"Chapter {chapter_idx + 1} has no outlines, skipping...")
             continue
-            
+
         prompt = build_prompt_for_chapter(story_info, chapter_idx, words_per_chapter)
 
         try:
@@ -342,7 +344,7 @@ def generate_full_story(story_info, words_per_chapter=500):
             if not response.text:
                 st.error(f"No response for chapter {chapter_idx + 1}")
                 continue
-                
+
             generated_text = response.text
             story_info["chapters"][chapter_idx]["generated_text"] = generated_text
             full_story_text += f"# Chapter {chapter_idx + 1}: {chapter['title']}\n\n{generated_text}\n\n"
@@ -353,11 +355,12 @@ def generate_full_story(story_info, words_per_chapter=500):
 
     return full_story_text
 
+
 def create_story(user_id, title, book_type, summary, chapters, characters, full_story="", rating=None):
     try:
         # Check if story with same title already exists for this user
         existing_story = supabase1.table("stories").select("*").eq("user_id", user_id).eq("title", title).execute()
-        
+
         if existing_story.data:
             # Update existing story instead of creating new one
             story_data = {
@@ -372,7 +375,7 @@ def create_story(user_id, title, book_type, summary, chapters, characters, full_
                 "rating": rating,
                 "updated_at": datetime.now().isoformat()
             }
-            
+
             response = supabase1.table("stories").update(story_data).eq("id", existing_story.data[0]["id"]).execute()
         else:
             # Create new story
@@ -388,15 +391,16 @@ def create_story(user_id, title, book_type, summary, chapters, characters, full_
                 "created_at": datetime.now().isoformat(),
                 "updated_at": datetime.now().isoformat()
             }
-            
+
             response = supabase1.table("stories").insert(story_data).execute()
-        
+
         if response.data:
             return response.data
         return None
     except Exception as e:
         st.error(f"Create story error: {e}")
         return None
+
 
 def get_stories(user_id):
     """Fetch all stories for a user"""
@@ -407,6 +411,7 @@ def get_stories(user_id):
         st.error(f"Get stories error: {e}")
         return []
 
+
 def get_all_stories():
     """Fetch all stories for ranking"""
     try:
@@ -416,6 +421,7 @@ def get_all_stories():
         st.error(f"Get all stories error: {e}")
         return []
 
+
 def get_story_rankings():
     """Get top 5 stories by rating"""
     try:
@@ -424,6 +430,7 @@ def get_story_rankings():
     except Exception as e:
         st.error(f"Get rankings error: {e}")
         return []
+
 
 # ===== GLOBAL VARIABLES =====
 traits = [
@@ -443,7 +450,8 @@ traits = [
 ]
 
 LS_TABS = ["Login", "Sign up"]
-MENU = ["Home Page", "Login/Signup", "Dashboard", "Create Story", "Leaderboard", "Explore", "About the creator", "Privacy Policy"]
+MENU = ["Home Page", "Login/Signup", "Dashboard", "Create Story", "Leaderboard", "Explore", "About the creator",
+        "Privacy Policy"]
 
 SUPABASE_URL = "https://omkvbyqtvomjivzokezm.supabase.co"
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9ta3ZieXF0dm9taml2em9rZXptIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTczMzkwMzEsImV4cCI6MjA3MjkxNTAzMX0.nc5fqqM1ueM0nn9YGpYAEB68jj7FC_J-q3xupeIQyE8"
@@ -471,6 +479,7 @@ if "story_type" not in st.session_state:
 if "rough_plot_saved" not in st.session_state:
     st.session_state["rough_plot_saved"] = False
 
+
 # ===== HELPER FUNCTIONS =====
 def signup(first_name, last_name, username, email, password):
     hashed = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
@@ -489,6 +498,7 @@ def signup(first_name, last_name, username, email, password):
         st.error(f"Signup error: {e}")
         return False
 
+
 def login(username, password):
     try:
         response = supabase1.table("users").select("id, password_hash").eq("username", username).execute()
@@ -502,6 +512,7 @@ def login(username, password):
     except Exception as e:
         st.error(f"Login error: {e}")
         return False
+
 
 def rate_story(story_content, title, book_type):
     rating_prompt = f"""
@@ -539,6 +550,7 @@ Your only job is to be harsh
         st.error(f"Error rating story: {e}")
         return 500.0
 
+
 def show_confetti():
     """Show confetti animation"""
     confetti_js = """
@@ -546,7 +558,7 @@ def show_confetti():
     const confetti = () => {
         const end = Date.now() + (3 * 1000);
         const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#00ffff', '#ff00ff'];
-        
+
         (function frame() {
             confetti({
                 particleCount: 5,
@@ -555,7 +567,7 @@ def show_confetti():
                 origin: { x: 0 },
                 colors: colors
             });
-            
+
             confetti({
                 particleCount: 5,
                 angle: 120,
@@ -563,7 +575,7 @@ def show_confetti():
                 origin: { x: 1 },
                 colors: colors
             });
-            
+
             if (Date.now() < end) {
                 requestAnimationFrame(frame);
             }
@@ -575,27 +587,28 @@ def show_confetti():
     """
     st.components.v1.html(confetti_js, height=200)
 
+
 def display_rating(rating, rank=None, total_stories=None):
     if rating is None:
         st.info("⭐ Rating: Not yet rated")
         return
-        
+
     try:
         display_rating = float(rating)
     except (ValueError, TypeError):
         st.error("Invalid rating format")
         return
-    
+
     col1, col2 = st.columns([2, 3])
-    
+
     with col1:
         st.subheader("⭐ Story Rating")
         star_rating = (display_rating / 1000.0) * 5
         stars_count = int(round(star_rating))
-        
+
         st.markdown(f"### {display_rating:.0f}/1000")
         st.progress(display_rating / 1000.0)
-    
+
     with col2:
         if rank is not None and total_stories is not None:
             st.subheader(" Ranking")
@@ -611,6 +624,7 @@ def display_rating(rating, rank=None, total_stories=None):
             else:
                 st.info(f"## #{rank} out of {total_stories} stories")
 
+
 def has_valid_chapters(chapters):
     """Check if chapters have outlines"""
     if not chapters:
@@ -620,18 +634,20 @@ def has_valid_chapters(chapters):
             return True
     return False
 
+
 def validate_story_data(title, chapters, story_type):
     """Validate story data before generation"""
     if not title.strip():
         return False, "Please enter a story title first"
-    
+
     if not has_valid_chapters(chapters):
         if story_type == "Short Story":
             return False, "Please enter your rough plot and click 'Save Rough Plot' first"
         else:
             return False, "Please add at least one chapter with outlines"
-    
+
     return True, ""
+
 
 # ===== MAIN APP =====
 st.title(" Storify")
@@ -640,7 +656,7 @@ page = st.sidebar.radio("Menu", MENU)
 if page == "Login/Signup":
     st.caption("Click on the Sign Up button if you do not have an account")
     FLS_TABS = st.tabs(LS_TABS)
-    
+
     with FLS_TABS[1]:
         with st.form("Signup Form"):
             firstname = st.text_input("First Name")
@@ -657,7 +673,7 @@ if page == "Login/Signup":
                         st.error("Signup Failed")
                 else:
                     st.error("Please enter all information")
-    
+
     with FLS_TABS[0]:
         with st.form("Login Form"):
             username = st.text_input("Username", key='loginusername')
@@ -678,26 +694,27 @@ elif page == "Create Story":
         st.title("Create the story")
         flstabs = ["Details", "Characters/Rough Outlining", "Outlining", "Final Story", "Save/Manage"]
         STORYTABS = st.tabs(flstabs)
-        
+
         with STORYTABS[0]:
             title = st.text_input("Write the name of your story", help="Enter the title for your story")
             books_type = ['Fiction', 'Non-fiction']
             book_type = st.radio('Type', books_type, index=0, help="Choose if your book is fiction or non-fiction")
             summarised = st.text_area("Write a background/summary for your story",
-                                     help="Give a short one line description of your story.")
-        
+                                      help="Give a short one line description of your story.")
+
         with STORYTABS[1]:
             st.subheader("Characters")
             st.caption("Create and develop the important characters of your story")
             use_advanced = st.checkbox("Use this if you have more than 40 characters in your story",
-                                      help="Click this if you have more than 40 characters")
+                                       help="Click this if you have more than 40 characters")
             if use_advanced:
                 num_characters = st.number_input("Enter number of main characters", min_value=40, value=50, step=1)
             else:
-                num_characters = st.slider("Enter number of main characters", min_value=2, max_value=40, value=5, step=1)
-            
+                num_characters = st.slider("Enter number of main characters", min_value=2, max_value=40, value=5,
+                                           step=1)
+
             st.session_state["num_characters"] = num_characters
-            
+
             for i in range(1, num_characters + 1):
                 st.markdown(f"**Character {i}**")
                 st.text_input("Name", key=f"char_name_{i}", help='What is the character\'s name?')
@@ -705,7 +722,7 @@ elif page == "Create Story":
                 st.text_input("Goal", key=f"char_goal_{i}", help='What is the character\'s goal?')
                 st.text_input("Problem", key=f"char_problem_{i}", help='What is the character\'s problem?')
                 st.text_area("Backstory", key=f"char_backstory_{i}", help='What is the character\'s backstory?')
-                
+
                 st.multiselect(
                     "Personality Traits",
                     options=traits,
@@ -713,21 +730,21 @@ elif page == "Create Story":
                     placeholder="Select traits...",
                     accept_new_options=True
                 )
-                
+
                 roles = ["Protagonist", "Antagonist", "Sidekick", "Mentor", "Catalyst"]
                 st.selectbox("Role", options=roles, key=f"char_role_{i}")
-        
+
         with STORYTABS[2]:
             st.title("Story Outlining")
-            story_type = st.segmented_control("Choose Story Type", options=["Chapters", "Short Story"], 
-                                            key="story_type_selector")
-            
+            story_type = st.segmented_control("Choose Story Type", options=["Chapters", "Short Story"],
+                                              key="story_type_selector")
+
             # Store the story type in session state
             st.session_state["story_type"] = story_type
-            
+
             if story_type == "Chapters":
                 st.session_state["rough_plot_saved"] = False
-                
+
                 if st.button("Add Chapter"):
                     chapter_id = len(st.session_state["chapters"]) + 1
                     st.session_state["chapters"].append({
@@ -735,7 +752,7 @@ elif page == "Create Story":
                         "outlines": []
                     })
                     st.rerun()
-                
+
                 for idx, chapter in enumerate(st.session_state["chapters"]):
                     st.subheader(chapter["title"])
                     chapter["title"] = st.text_input("Chapter Title", value=chapter["title"], key=f"title_{idx}")
@@ -744,11 +761,11 @@ elif page == "Create Story":
                             chapter["outlines"] = []
                         chapter["outlines"].append(f"New Outline {len(chapter['outlines']) + 1}")
                         st.rerun()
-                    
+
                     # Ensure outlines list exists
                     if "outlines" not in chapter:
                         chapter["outlines"] = []
-                    
+
                     for o_idx, outline in enumerate(chapter["outlines"]):
                         cols = st.columns([4, 1])
                         with cols[0]:
@@ -759,15 +776,15 @@ elif page == "Create Story":
                             if st.button("Delete", key=f"delete_{idx}_{o_idx}"):
                                 chapter["outlines"].pop(o_idx)
                                 st.rerun()
-                
+
                 if st.session_state["chapters"]:
                     st.success(f"✅ You have {len(st.session_state['chapters'])} chapter(s) with outlines ready!")
-            
+
             elif story_type == "Short Story":
                 st.header("Please enter the rough plot of your story")
                 rough_plot = st.text_area("Rough Plot", key="rough_plot", height=200,
-                                         placeholder="Describe your entire story plot here...")
-                
+                                          placeholder="Describe your entire story plot here...")
+
                 if st.button("Save Rough Plot"):
                     if rough_plot.strip():
                         st.session_state["chapters"] = [{
@@ -776,18 +793,19 @@ elif page == "Create Story":
                         }]
                         st.session_state["rough_plot_saved"] = True
                         st.success("✅ Rough plot saved! Now click 'Create the story' to generate.")
-                        st.info("Your story outline has been saved. Go to the 'Final Story' tab to generate your story.")
+                        st.info(
+                            "Your story outline has been saved. Go to the 'Final Story' tab to generate your story.")
                     else:
                         st.error("Please enter some text for your rough plot")
-                
+
                 if st.session_state.get("rough_plot_saved"):
                     st.success("✅ Rough plot saved and ready for story generation!")
-        
+
         with STORYTABS[3]:
             st.header("Generation")
             st.write("Use AI to create the story")
             words_per_chapter = st.slider("Enter the amount of words per chapter", 300, 2000, 500)
-            
+
             # Show current chapter status
             if st.session_state["chapters"]:
                 st.info(f"📚 You have {len(st.session_state['chapters'])} chapter(s) ready for generation")
@@ -796,10 +814,11 @@ elif page == "Create Story":
                     valid_outlines = sum(1 for outline in chapter.get("outlines", []) if outline.strip())
                     status = "✅" if valid_outlines > 0 else "❌"
                     st.write(f"{status} {chapter['title']}: {valid_outlines} valid outline(s)")
-            
+
             if st.button("Create the story", type="primary"):
-                is_valid, error_message = validate_story_data(title, st.session_state["chapters"], st.session_state["story_type"])
-                
+                is_valid, error_message = validate_story_data(title, st.session_state["chapters"],
+                                                              st.session_state["story_type"])
+
                 if not is_valid:
                     st.error(error_message)
                 else:
@@ -829,20 +848,20 @@ elif page == "Create Story":
                                 for chapter in st.session_state.get("chapters", [])
                             ]
                         }
-                        
+
                         full_story = generate_full_story(story_info, words_per_chapter=words_per_chapter)
                         if full_story:
                             st.session_state["generated_story"] = full_story
-                            
+
                             with st.spinner("Rating your story..."):
                                 rating = rate_story(full_story, title, book_type)
                                 st.session_state["story_rating"] = rating
-                            
+
                             st.subheader("Generated Story")
                             st.markdown(full_story)
                             st.markdown("---")
                             display_rating(rating)
-                            
+
                             # Add download button
                             st.download_button(
                                 label="📥 Download Story",
@@ -852,15 +871,15 @@ elif page == "Create Story":
                             )
                         else:
                             st.error("Failed to generate story. Please try again.")
-        
+
         with STORYTABS[4]:
             st.header("Save & Manage Your Story")
-            
+
             if st.session_state.get("generated_story"):
                 st.success("✅ Your story has been generated and is ready to save!")
                 if st.session_state.get("story_rating"):
                     display_rating(st.session_state["story_rating"])
-            
+
             if st.button("💾 Save Story", type="primary"):
                 if "user_id" not in st.session_state:
                     st.error("No user ID found. Please log in again.")
@@ -880,7 +899,7 @@ elif page == "Create Story":
                             "problem": st.session_state.get(f"char_problem_{i}", ""),
                             "backstory": st.session_state.get(f"char_backstory_{i}", "")
                         })
-                    
+
                     story_data = create_story(
                         st.session_state["user_id"],
                         title,
@@ -897,11 +916,12 @@ elif page == "Create Story":
                         all_stories = get_all_stories()
                         current_story_id = story_data[0]["id"] if story_data else None
                         rankings = get_story_rankings()
-                        
+
                         if current_story_id and rankings:
-                            rank = next((i+1 for i, story in enumerate(rankings) if story["id"] == current_story_id), len(all_stories) + 1)
+                            rank = next((i + 1 for i, story in enumerate(rankings) if story["id"] == current_story_id),
+                                        len(all_stories) + 1)
                             display_rating(st.session_state["story_rating"], rank, len(all_stories))
-                        
+
                         # Reset for new story
                         st.session_state["chapters"] = []
                         st.session_state["generated_story"] = ""
@@ -936,30 +956,30 @@ elif page == "Dashboard":
 
         if not editing:
             st.header(" Your Stories")
-            
+
             # Show user's best ranking
             user_stories_with_rank = []
             for story in stories:
-                rank = next((i+1 for i, s in enumerate(rankings) if s["id"] == story["id"]), len(all_stories) + 1)
+                rank = next((i + 1 for i, s in enumerate(rankings) if s["id"] == story["id"]), len(all_stories) + 1)
                 user_stories_with_rank.append((story, rank))
-            
+
             # Handle None ratings by converting to 0
             user_stories_with_rank.sort(key=lambda x: x[0].get("rating", 0) or 0, reverse=True)
-            
+
             if not stories:
                 if not stories:
                     st.info("""
                     🎈 **Welcome to your Dashboard!**
-                    
+
                     It looks like you haven't created any stories yet. Here's how to get started:
-                    
+
                     1. **Click on "Create Story"** in the sidebar
                     2. **Fill in your story details** - title, type, and summary
                     3. **Develop your characters** - give them personalities and goals  
                     4. **Outline your plot** - use chapters or a short story format
                     5. **Generate your story** - let AI bring your creation to life!
                     6. **Save and share** - rate your story and see how it ranks
-                    
+
                     Your first amazing story is just a few clicks away! ✨
                     """)
             else:
@@ -970,12 +990,12 @@ elif page == "Dashboard":
                             st.subheader(story["title"])
                             st.write(f"**Type:** {story['book_type']}")
                             st.write(f"**Summary:** {story['summary']}")
-                            
+
                             if story.get("rating") is not None:
                                 display_rating(story["rating"], rank, len(all_stories))
                             else:
                                 st.info("⭐ Rating: Not yet rated")
-                        
+
                         with col2:
                             st.caption(f"ID: {story['id']}")
                             st.caption(f"Rank: #{rank}")
@@ -983,7 +1003,7 @@ elif page == "Dashboard":
                                 st.caption(f"Created: {story.get('created_at')[:10]}")
                             else:
                                 st.caption("Created: N/A")
-                        
+
                         # Display full story if available
                         if story.get("full_story"):
                             with st.expander("View Full Story"):
@@ -993,11 +1013,11 @@ elif page == "Dashboard":
                         if chapters:
                             with st.expander("View Chapters"):
                                 for c_idx, chapter in enumerate(chapters):
-                                    st.markdown(f"**Chapter {c_idx+1}: {chapter['title']}**")
+                                    st.markdown(f"**Chapter {c_idx + 1}: {chapter['title']}**")
                                     outlines = chapter.get("outlines", [])
                                     for o_idx, outline in enumerate(outlines):
                                         st.write(f"- {outline}")
-                        
+
                         # Audio book conversion
                         if st.button("Convert to Audio Book", key=f"audio_{story['id']}"):
                             if story.get("full_story"):
@@ -1028,7 +1048,7 @@ elif page == "Dashboard":
                                     mime="audio/mp3",
                                     key=f"download_audio_{story['id']}"
                                 )
-                        
+
                         col1, col2 = st.columns(2)
                         with col1:
                             if st.button(f"Edit '{story['title']}'", key=f"edit_{story['id']}"):
@@ -1039,12 +1059,12 @@ elif page == "Dashboard":
                                 st.session_state["chapters"] = story.get("chapters", [])
                                 st.session_state["generated_story"] = story.get("full_story", "")
                                 st.session_state["story_rating"] = story.get("rating")
-                                
+
                                 if story.get("characters"):
                                     st.session_state["num_characters"] = len(story["characters"])
                                 else:
                                     st.session_state["num_characters"] = 1
-                                    
+
                                 st.rerun()
                         with col2:
                             if st.button(f"Delete '{story['title']}'", key=f"delete_{story['id']}"):
@@ -1059,34 +1079,34 @@ elif page == "Dashboard":
             st.header(f"Editing: {st.session_state.get('title', 'Untitled Story')}")
             flstabs = ["Details", "Characters", "Outlining", "Full Story AI", "Save"]
             STORYTABS = st.tabs(flstabs)
-            
+
             with STORYTABS[0]:
-                title = st.text_input("Write the name of your story", 
-                                    value=st.session_state.get("title", ""),
-                                    help="Enter the title for your story")
+                title = st.text_input("Write the name of your story",
+                                      value=st.session_state.get("title", ""),
+                                      help="Enter the title for your story")
                 books_type = ['Fiction', 'Non-fiction']
                 current_type = st.session_state.get("book_type", "Fiction")
-                book_type = st.radio('Type', books_type, 
-                                    index=0 if current_type == "Fiction" else 1,
-                                    help="Choose if your book is fiction or non-fiction")
+                book_type = st.radio('Type', books_type,
+                                     index=0 if current_type == "Fiction" else 1,
+                                     help="Choose if your book is fiction or non-fiction")
                 summarised = st.text_area("Write a background/summary for your story",
-                                        value=st.session_state.get("summary", ""),
-                                        help="Give a short one line description of your story.")
-            
+                                          value=st.session_state.get("summary", ""),
+                                          help="Give a short one line description of your story.")
+
             with STORYTABS[1]:
                 st.subheader("Characters")
                 st.caption("Create and develop the important characters of your story")
-                
+
                 if "num_characters" not in st.session_state:
                     st.session_state["num_characters"] = 1
-                
-                num_characters = st.slider("Enter number of main characters", 
-                                        min_value=1, max_value=40, 
-                                        value=st.session_state["num_characters"],
-                                        key="edit_num_chars")
-                
+
+                num_characters = st.slider("Enter number of main characters",
+                                           min_value=1, max_value=40,
+                                           value=st.session_state["num_characters"],
+                                           key="edit_num_chars")
+
                 st.session_state["num_characters"] = num_characters
-                
+
                 current_story_id = st.session_state.get("current_story_id")
                 story_data = None
                 if current_story_id and "stories" in st.session_state:
@@ -1094,29 +1114,29 @@ elif page == "Dashboard":
                         if story["id"] == current_story_id:
                             story_data = story
                             break
-                
+
                 for i in range(1, num_characters + 1):
                     st.markdown(f"**Character {i}**")
-                    
+
                     char_data = {}
-                    if (story_data and 
-                        story_data.get("characters") and 
-                        isinstance(story_data["characters"], list) and 
-                        i <= len(story_data["characters"])):
-                        char_data = story_data["characters"][i-1]
-                    
+                    if (story_data and
+                            story_data.get("characters") and
+                            isinstance(story_data["characters"], list) and
+                            i <= len(story_data["characters"])):
+                        char_data = story_data["characters"][i - 1]
+
                     st.text_input("Name", value=char_data.get("name", ""), key=f"edit_name_{i}")
                     st.text_input("Age", value=char_data.get("age", ""), key=f"edit_age_{i}")
                     st.text_input("Goal", value=char_data.get("goal", ""), key=f"edit_goal_{i}")
                     st.text_input("Problem", value=char_data.get("problem", ""), key=f"edit_problem_{i}")
                     st.text_area("Backstory", value=char_data.get("backstory", ""), key=f"edit_backstory_{i}")
-                    
+
                     existing_traits = char_data.get("traits", [])
                     if not isinstance(existing_traits, list):
                         existing_traits = []
-                    
+
                     valid_defaults = [trait for trait in existing_traits if trait in traits]
-                    
+
                     st.multiselect(
                         "Personality Traits",
                         options=traits,
@@ -1124,11 +1144,11 @@ elif page == "Dashboard":
                         key=f"edit_personality_{i}",
                         accept_new_options=True
                     )
-                    
+
                     role_options = ["Protagonist", "Antagonist", "Sidekick", "Mentor", "Catalyst"]
                     current_role = char_data.get("role", "Sidekick")
                     role_index = role_options.index(current_role) if current_role in role_options else 0
-                    
+
                     st.selectbox(
                         "Role",
                         options=role_options,
@@ -1138,27 +1158,29 @@ elif page == "Dashboard":
 
             with STORYTABS[2]:
                 st.title("Story Outlining")
-                
+
                 # Initialize edit_story_type if not exists
                 if "edit_story_type" not in st.session_state:
                     st.session_state.edit_story_type = "Chapters"
-                
+
+
                 # Use callback approach to handle story type changes
                 def update_story_type():
                     st.session_state.edit_story_type = st.session_state.story_type_widget
-                
+
+
                 # Create the widget with callback
                 story_type = st.segmented_control(
-                    "Choose Story Type", 
-                    options=["Chapters", "Short Story"], 
+                    "Choose Story Type",
+                    options=["Chapters", "Short Story"],
                     key="story_type_widget",
                     default=st.session_state.edit_story_type,
                     on_change=update_story_type
                 )
-                
+
                 # Use the value from session state
                 current_story_type = st.session_state.edit_story_type
-                
+
                 if current_story_type == "Chapters":
                     current_story_id = st.session_state.get("current_story_id")
                     if current_story_id and "stories" in st.session_state:
@@ -1168,10 +1190,10 @@ elif page == "Dashboard":
                                     if "chapters" not in st.session_state:
                                         st.session_state["chapters"] = story["chapters"]
                                 break
-                    
+
                     if "chapters" not in st.session_state:
                         st.session_state["chapters"] = []
-                    
+
                     if st.button("Add Chapter", key="edit_add_chapter"):
                         chapter_id = len(st.session_state["chapters"]) + 1
                         st.session_state["chapters"].append({
@@ -1179,25 +1201,25 @@ elif page == "Dashboard":
                             "outlines": []
                         })
                         st.rerun()
-                    
+
                     for idx, chapter in enumerate(st.session_state["chapters"]):
                         with st.expander(chapter.get("title", f"Chapter {idx + 1}"), expanded=False):
                             new_title = st.text_input(
-                                "Chapter Title", 
-                                value=chapter.get("title", f"Chapter {idx + 1}"), 
+                                "Chapter Title",
+                                value=chapter.get("title", f"Chapter {idx + 1}"),
                                 key=f"edit_title_{idx}"
                             )
                             if new_title != chapter.get("title"):
                                 st.session_state["chapters"][idx]["title"] = new_title
-                            
+
                             st.subheader("Outlines")
-                            
+
                             if st.button("Add Outline", key=f"edit_add_outline_{idx}"):
                                 if "outlines" not in st.session_state["chapters"][idx]:
                                     st.session_state["chapters"][idx]["outlines"] = []
                                 st.session_state["chapters"][idx]["outlines"].append("")
                                 st.rerun()
-                            
+
                             if "outlines" in st.session_state["chapters"][idx]:
                                 for o_idx, outline in enumerate(st.session_state["chapters"][idx]["outlines"]):
                                     col1, col2 = st.columns([5, 1])
@@ -1212,24 +1234,24 @@ elif page == "Dashboard":
                                         if st.button("🗑️", key=f"edit_delete_outline_{idx}_{o_idx}"):
                                             st.session_state["chapters"][idx]["outlines"].pop(o_idx)
                                             st.rerun()
-                            
+
                             if st.button("Delete Chapter", key=f"edit_delete_chapter_{idx}"):
                                 st.session_state["chapters"].pop(idx)
                                 st.rerun()
-                
+
                 elif current_story_type == "Short Story":
                     st.header("Please enter the rough plot of your story")
-                    
+
                     # Pre-fill with existing data if editing a short story
                     existing_plot = ""
                     if st.session_state.get("chapters") and len(st.session_state["chapters"]) == 1:
                         existing_chapter = st.session_state["chapters"][0]
                         if existing_chapter.get("outlines"):
                             existing_plot = existing_chapter["outlines"][0]
-                    
+
                     rough_plot = st.text_area("Rough Plot", value=existing_plot, key="edit_rough_plot", height=200,
-                                            placeholder="Describe your story here...")
-                    
+                                              placeholder="Describe your story here...")
+
                     if st.button("Save Rough Plot", key="edit_save_rough_plot"):
                         if rough_plot.strip():
                             st.session_state["chapters"] = [{
@@ -1239,12 +1261,13 @@ elif page == "Dashboard":
                             st.success("✅ Rough plot saved! Now click 'Create the story' to generate.")
                         else:
                             st.error("Please enter some text for your rough plot")
-            
+
             with STORYTABS[3]:
                 st.header("Generation")
                 st.write("Use AI to create the story")
-                words_per_chapter = st.slider("Enter the amount of words per chapter", 300, 2000, 500, key="edit_words_slider")
-                
+                words_per_chapter = st.slider("Enter the amount of words per chapter", 300, 2000, 500,
+                                              key="edit_words_slider")
+
                 if st.button("Create the story", key="edit_create_story"):
                     if not title.strip():
                         st.error("Please enter a story title first")
@@ -1277,21 +1300,21 @@ elif page == "Dashboard":
                                     for chapter in st.session_state.get("chapters", [])
                                 ]
                             }
-                            
+
                             full_story = generate_full_story(story_info, words_per_chapter=words_per_chapter)
-                            
+
                             if full_story:
                                 st.session_state["generated_story"] = full_story
                                 st.success("✅ Story generated successfully!")
-                                
+
                                 with st.spinner("Rating your story..."):
                                     rating = rate_story(full_story, title, book_type)
                                     st.session_state["story_rating"] = rating
-                                
+
                                 st.subheader("📖 Your Generated Story")
                                 with st.expander("View Full Story", expanded=True):
                                     st.text_area("Full Story Content", full_story, height=400, key="full_story_display")
-                                
+
                                 st.download_button(
                                     label="📥 Download Story as Text File",
                                     data=full_story,
@@ -1299,12 +1322,12 @@ elif page == "Dashboard":
                                     mime="text/plain",
                                     key="edit_download_story"
                                 )
-                                
+
                                 st.markdown("---")
                                 display_rating(rating)
                             else:
                                 st.error("❌ Failed to generate story. Please try again.")
-            
+
             with STORYTABS[4]:
                 st.header("💾 Save & Manage Your Story")
                 if st.button("💾 Save Story to Database", type="primary", key="edit_save_final"):
@@ -1325,7 +1348,7 @@ elif page == "Dashboard":
                                     "problem": st.session_state.get(f"edit_problem_{i}", ""),
                                     "backstory": st.session_state.get(f"edit_backstory_{i}", "")
                                 })
-                            
+
                             story_data = create_story(
                                 st.session_state["user_id"],
                                 title,
@@ -1342,11 +1365,13 @@ elif page == "Dashboard":
                                 all_stories = get_all_stories()
                                 current_story_id = story_data[0]["id"] if story_data else None
                                 rankings = get_story_rankings()
-                                
+
                                 if current_story_id and rankings:
-                                    rank = next((i+1 for i, story in enumerate(rankings) if story["id"] == current_story_id), len(all_stories) + 1)
+                                    rank = next(
+                                        (i + 1 for i, story in enumerate(rankings) if story["id"] == current_story_id),
+                                        len(all_stories) + 1)
                                     display_rating(st.session_state["story_rating"], rank, len(all_stories))
-                                
+
                                 st.session_state["current_story_id"] = None
                                 st.session_state["story_rating"] = None
                                 # Clear edit-specific session states
@@ -1355,7 +1380,7 @@ elif page == "Dashboard":
                                 st.rerun()
                             else:
                                 st.error("❌ Failed to save story. Please check the console for errors.")
-                
+
                 if st.button("← Back to Dashboard", key="edit_back_to_dashboard"):
                     st.session_state["current_story_id"] = None
                     st.session_state["chapters"] = []
@@ -1368,57 +1393,56 @@ elif page == "Dashboard":
 elif page == "Leaderboard":
     st.title(" Story Leaderboard")
     st.subheader("Top 5 Stories by Rating")
-    
+
     rankings = get_story_rankings()
     all_stories = get_all_stories()
-    
+
     # Filter out stories with None ratings
     valid_rankings = [story for story in rankings if story.get("rating") is not None]
-    
+
     if not valid_rankings:
         st.info("No rated stories yet! Create and rate stories to start the leaderboard.")
     else:
         for i, story in enumerate(valid_rankings):
             with st.container(border=True):
                 col1, col2, col3 = st.columns([1, 3, 1])
-                
+
                 with col1:
-                    st.markdown(f"## #{i+1}")
+                    st.markdown(f"## #{i + 1}")
                     if i == 0:
                         st.markdown(" **First Place!**")
                     elif i == 1:
                         st.markdown(" **Second Place!**")
                     elif i == 2:
                         st.markdown(" **Third Place!**")
-                
+
                 with col2:
                     st.markdown(f"### {story['title']}")
                     st.write(f"**By User ID:** {story['user_id']}")
                     st.write(f"**Type:** {story['book_type']}")
                     if story.get("rating") is not None:
-                        stars = "★" * int(story["rating"]) + "☆" * (10 - int(story["rating"]))
                         st.markdown(f"**Rating:** {story['rating']:.1f}/10")
-                        st.markdown(f"**{stars}**")
-                
+                        
                 with col3:
                     if story.get("full_story"):
                         with st.expander("Read"):
                             st.text_area("Story", story["full_story"], height=200, key=f"leader_{story['id']}")
-        
+
         st.markdown("---")
         st.subheader("Your Stories Ranking")
-        
+
         if st.session_state.get("SIGNED_IN") and "user_id" in st.session_state:
             user_stories = get_stories(st.session_state["user_id"])
             rated_user_stories = [s for s in user_stories if s.get("rating") is not None]
-            
+
             if rated_user_stories:
                 user_best = max(rated_user_stories, key=lambda x: x.get("rating", 0) or 0)
-                user_rank = next((i+1 for i, story in enumerate(valid_rankings) if story["id"] == user_best["id"]), len(all_stories) + 1)
-                
+                user_rank = next((i + 1 for i, story in enumerate(valid_rankings) if story["id"] == user_best["id"]),
+                                 len(all_stories) + 1)
+
                 st.metric("Your Best Rating", f"{user_best.get('rating'):.1f}/10")
                 st.metric("Your Best Rank", f"#{user_rank} of {len(all_stories)}")
-                
+
                 if user_rank <= 5:
                     st.success(" Congratulations! You're in the top 5!")
                     show_confetti()
@@ -1431,37 +1455,37 @@ elif page == "Leaderboard":
 
 elif page == "Explore":
     st.header("📚 Explore Stories")
-    
+
     col1, col2 = st.columns(2)
     with col1:
         search_term = st.text_input("🔍 Search stories", placeholder="Title or author...")
     with col2:
         sort_by = st.selectbox("Sort by", ["Newest First", "Highest Rated", "Oldest First"])
-    
+
     query = supabase1.table("stories").select(
         "id, title, summary, full_story, rating, created_at, book_type, users(first_name, last_name)"
     )
-    
+
     if search_term:
         query = query.ilike("title", f"%{search_term}%")
-    
+
     if sort_by == "Newest First":
         query = query.order("created_at", desc=True)
     elif sort_by == "Highest Rated":
         query = query.order("rating", desc=True)
     else:
         query = query.order("created_at", desc=False)
-    
+
     try:
         response = query.execute()
         stories = response.data if response.data else []
     except Exception as e:
         st.error("Error loading stories")
         stories = []
-    
+
     if not stories:
         st.info("No stories found")
-    
+
     for story in stories:
         with st.expander(f"📖 {story['title']}", expanded=False):
             col1, col2 = st.columns(2)
@@ -1475,23 +1499,23 @@ elif page == "Explore":
                     st.write(f"**Rating:** ⭐ {float(rating):.1f}/10")
                 else:
                     st.write("**Rating:** Not rated")
-            
+
             st.write(f"**Summary:** {story.get('summary', 'No summary available')}")
-            
+
             if story.get("full_story"):
                 word_count = len(story["full_story"].split())
                 read_time = max(1, word_count // 200)
-                
+
                 st.write(f"**Length:** {word_count} words ({read_time} min read)")
-                
+
                 st.markdown("### 📖 Story Content")
                 st.markdown(
                     f'<div style="height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 15px; border-radius: 5px; background: #f9f9f9;">'
                     f'{story["full_story"]}'
-                    f'</div>', 
+                    f'</div>',
                     unsafe_allow_html=True
                 )
-                
+
                 st.download_button(
                     "📥 Download Story",
                     story["full_story"],
@@ -1501,23 +1525,23 @@ elif page == "Explore":
                 )
             else:
                 st.warning("No story content available")
-        
+
         st.markdown("---")
 
 elif page == "Home Page":
     with st.container():
         col1, col2 = st.columns(2)
-        
+
         with col1:
             st.header("Storify! 📖")
             st.markdown("### Craft captivating stories with the click of a button")
-            
+
             st.markdown("""
             Transform your **rough ideas** into **beautiful stories** with AI magic. 
             Whether you're writing fantasy, romance, sci-fi, or anything in between - 
             we help you create amazing stories in seconds.
             """)
-            
+
             col1a, col1b = st.columns(2)
             with col1a:
                 if st.button("✨ Start Creating", type="primary", use_container_width=True):
@@ -1525,7 +1549,7 @@ elif page == "Home Page":
             with col1b:
                 if st.button("Gallery", type="primary", use_container_width=True):
                     st.write("Click on the sidebar and use the Explore option")
-        
+
         with col2:
             try:
                 image = Image.open("image.png")
@@ -1549,9 +1573,9 @@ elif page == "Home Page":
     with col3:
         st.subheader("1. Inspire")
         st.markdown("💡 **Share your idea** - just a sentence or two is enough!")
-        
+
     with col4:
-        st.subheader("2. Create")  
+        st.subheader("2. Create")
         st.markdown("⚡ **Watch AI work** - generate unique stories in seconds")
 
     with col5:
@@ -1578,12 +1602,11 @@ This application is designed to **assist writers in overcoming creative blocks a
         except:
             st.info("Profile image not found")
 
-
-#footer
+# footer
 
 if page == "Privacy Policy":
     with open('privacy.txt', 'r') as f:
-        footer_content = f.read() 
+        footer_content = f.read()
 
     st.markdown("---")
     st.info(footer_content)
